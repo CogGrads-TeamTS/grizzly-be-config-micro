@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8888
 spring:
   application:
     name: config-service
@@ -7,4 +7,3 @@ spring:
     config:
       allow-override: true
       override-none: true
-    

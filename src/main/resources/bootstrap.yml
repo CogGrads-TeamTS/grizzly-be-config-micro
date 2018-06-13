@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: config-service
+  cloud:
+    config:
+      allow-override: true
+      override-none: true
+    

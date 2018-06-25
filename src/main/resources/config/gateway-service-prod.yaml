@@ -1,0 +1,26 @@
+zuul:
+  ignoredServices: '*'
+  routes:
+    config:
+      path: /config/**
+      serviceId: config-service
+    products:
+      path: /products/**
+      serviceId: product-service
+    categories:
+      path: /categories/**
+      serviceId: category-service
+    vendors:
+      path: /vendors/**
+      serviceId: vendor-service
+    user:
+      path: /user/**
+      serviceId: user-service
+  # don't allow production configs to be accessed via gateway
+  ignored-patterns: /config/**/prod
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,30 @@
+zuul:
+  ignoredServices: '*'
+  routes:
+    config:
+      path: /config/**
+      url: http://ts.ausgrads.academy:8765/config/
+    products:
+      path: /products/**
+      url: http://localhost:5555
+    categories:
+      path: /categories/**
+      url: http://localhost:3333
+    vendors:
+      path: /vendors/**
+      url: http://localhost:4444
+    user:
+      path: /user/**
+      url: http://localhost:6666
+  # don't allow production configs to be accessed via gateway
+  ignored-patterns: /config/**/prod
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    prefer-ip-address: true
+
+ribbon:
+  eureka:
+    enabled: false

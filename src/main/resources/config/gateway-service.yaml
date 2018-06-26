@@ -1,0 +1,3 @@
+zuul:
+  # allows forwarding of the authorization header
+  sensitiveHeaders: Cookie,Set-Cookie

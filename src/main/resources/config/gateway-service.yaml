@@ -11,3 +11,4 @@ auth0:
   clientSecret: ENC(mLSmr+RX29yAKUKLPoUwiXhqJizgpqF3TEV4MHzLSSsrJsGP9+ToBXtzW7GHOT93FgkV519CS5uVem1RWPQNafF3t2fGbj7gPxE6tofMg60=)
   audience: https://blakehowe96.au.auth0.com/api/v2/
   domain: blakehowe96.au.auth0.com
+  issuer: https://blakehowe96.au.auth0.com/

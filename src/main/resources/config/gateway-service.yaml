@@ -1,3 +1,7 @@
 zuul:
   # allows forwarding of the authorization header
   sensitiveHeaders: Cookie,Set-Cookie
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

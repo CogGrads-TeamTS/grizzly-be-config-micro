@@ -28,3 +28,6 @@ eureka:
 ribbon:
   eureka:
     enabled: false
+
+auth0:
+  apiAudience: http://localhost:6666

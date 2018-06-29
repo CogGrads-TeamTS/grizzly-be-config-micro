@@ -24,3 +24,6 @@ eureka:
     fetchRegistry: true
   instance:
     prefer-ip-address: true
+
+auth0:
+  apiAudience: https://blakehowe96.au.auth0.com/userinfo

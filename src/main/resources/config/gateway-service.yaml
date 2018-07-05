@@ -1,6 +1,6 @@
 zuul:
-  # allows forwarding of the authorization header
-  sensitiveHeaders: Cookie,Set-Cookie
+  # allows forwarding of the authorization header and cookies
+  sensitiveHeaders:
 
 spring:
   autoconfigure:

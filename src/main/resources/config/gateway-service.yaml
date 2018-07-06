@@ -5,6 +5,14 @@ zuul:
 spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  http:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
 
 auth0:
   clientId: xXz4FrF4u9ryX0SbonX0Nge2Q2QrKR4S

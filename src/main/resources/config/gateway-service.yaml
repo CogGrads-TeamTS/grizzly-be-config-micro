@@ -12,3 +12,8 @@ auth0:
   audience: https://blakehowe96.au.auth0.com/api/v2/
   domain: blakehowe96.au.auth0.com
   issuer: https://blakehowe96.au.auth0.com/
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
